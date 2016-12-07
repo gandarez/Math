@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacentPoints", "src\AdjacentPoints\AdjacentPoints.csproj", "{1C8DFEA2-9DE1-441B-9571-62FD12B65C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacentPoints.Tests", "tests\AdjacentPoints.Tests\AdjacentPoints.Tests.csproj", "{231C2669-CE02-4B5E-A18C-2CA9649C801E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C8DFEA2-9DE1-441B-9571-62FD12B65C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8DFEA2-9DE1-441B-9571-62FD12B65C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8DFEA2-9DE1-441B-9571-62FD12B65C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8DFEA2-9DE1-441B-9571-62FD12B65C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231C2669-CE02-4B5E-A18C-2CA9649C801E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231C2669-CE02-4B5E-A18C-2CA9649C801E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231C2669-CE02-4B5E-A18C-2CA9649C801E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231C2669-CE02-4B5E-A18C-2CA9649C801E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
