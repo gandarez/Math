@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AdjacentPointsMaxDistance
 {
-    public class MaxDistance : IAdjacentPoints
+    public class MinDistance : IAdjacentPoints
     {
         public int Calculate(int[] a)
         {
@@ -13,17 +13,17 @@ namespace AdjacentPointsMaxDistance
                 throw new ArgumentOutOfRangeException(nameof(a), "Lenght of parameter a must be between 1 and 40000");
 
             var sorted = a.ToList().OrderBy(x => x).ToArray();
-            var maxDistance = 0;
+            var minDistance = int.MaxValue;
 
             for (var i = 0; i < sorted.Length - 1; i++)
             {
                 var currentDistance = Math.Abs(sorted[i + 1] - sorted[i]);
 
-                if (currentDistance > maxDistance)
-                    maxDistance = currentDistance;
+                if (currentDistance < minDistance)
+                    minDistance = currentDistance;
             }
 
-            return maxDistance > 1 ? maxDistance : -2;
-        }      
+            return minDistance > 0 ? minDistance : -2;
+        }
     }
 }

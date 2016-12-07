@@ -43,6 +43,8 @@
     <Compile Include="IAdjacentPoints.cs" />
     <Compile Include="MaxDistance.cs" />
     <Compile Include="MaxDistanceUsingLinq.cs" />
+    <Compile Include="MinDistance.cs" />
+    <Compile Include="MinDistanceUsingLinq.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
