@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace AdjacentPointsMaxDistance
 {
@@ -12,12 +11,12 @@ namespace AdjacentPointsMaxDistance
             if (a.Length == 0 || a.Length > 40000)
                 throw new ArgumentOutOfRangeException(nameof(a), "Lenght of parameter a must be between 1 and 40000");
 
-            var sorted = a.ToList().OrderBy(x => x).ToArray();
+            Array.Sort(a);
             var maxDistance = 0;
 
-            for (var i = 0; i < sorted.Length - 1; i++)
+            for (var i = 0; i < a.Length - 1; i++)
             {
-                var currentDistance = Math.Abs(sorted[i + 1] - sorted[i]);
+                var currentDistance = Math.Abs(a[i + 1] - a[i]);
 
                 if (currentDistance > maxDistance)
                     maxDistance = currentDistance;
